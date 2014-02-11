@@ -42,7 +42,8 @@
     UIGraphicsEndImageContext();
     
     UIImage *extraLightImage = [image tbb_applyExtraLightEffect];
-    UIImage *lightImage = [image tbb_applyLightEffect];
+    UIColor *tint = [source.view.tintColor colorWithAlphaComponent:0.3];
+    UIImage *lightImage = [image tbb_applyBlurWithRadius:20 tintColor:tint saturationDeltaFactor:0.8 maskImage:nil];
     
     TBBModalViewController *controller = (TBBModalViewController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     NSAssert([controller isKindOfClass:[TBBModalViewController class]], @"Must be presenting a TBBModalViewController");
