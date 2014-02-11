@@ -20,14 +20,16 @@
 //    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //    THE SOFTWARE.
 
-#import "TBBAppDelegate.h"
+#import "TBBGearViewController.h"
 
-@implementation TBBAppDelegate
+@implementation TBBGearViewController
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    self.window.tintColor = [UIColor colorWithHue:0.250 saturation:1.000 brightness:0.502 alpha:1.000];
-    return YES;
+    if (indexPath.section == tableView.numberOfSections - 1) {
+        [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 @end

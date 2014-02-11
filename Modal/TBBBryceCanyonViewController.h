@@ -20,14 +20,8 @@
 //    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //    THE SOFTWARE.
 
-#import "TBBAppDelegate.h"
+#import <UIKit/UIKit.h>
 
-@implementation TBBAppDelegate
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    self.window.tintColor = [UIColor colorWithHue:0.250 saturation:1.000 brightness:0.502 alpha:1.000];
-    return YES;
-}
+@interface TBBBryceCanyonViewController : UIViewController
 
 @end

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491476B718AAA1E1004A6D80 /* TBBInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491476B618AAA1E1004A6D80 /* TBBInfoViewController.m */; };
+		4985B8BD18A983C000437D1A /* TBBModalStyleAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4985B8BC18A983C000437D1A /* TBBModalStyleAnimatedTransition.m */; };
+		4985B8C018A983E300437D1A /* UIImage+TBBImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 4985B8BF18A983E300437D1A /* UIImage+TBBImageEffects.m */; };
+		4985B8C318A9884E00437D1A /* TBBModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4985B8C218A9884E00437D1A /* TBBModalViewController.m */; };
+		4985B8C618A98ADA00437D1A /* UIViewController+TBBCustomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4985B8C518A98ADA00437D1A /* UIViewController+TBBCustomTransition.m */; };
+		4985B8C818A9909700437D1A /* BryceByRobLee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4985B8C718A9909700437D1A /* BryceByRobLee.jpg */; };
+		4985B8CB18A990CF00437D1A /* TBBGearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4985B8CA18A990CF00437D1A /* TBBGearViewController.m */; };
+		4985B8CE18A993A700437D1A /* TBBBryceCanyonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4985B8CD18A993A700437D1A /* TBBBryceCanyonViewController.m */; };
 		49B0EAFC18A94EFE0039DF6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B0EAFB18A94EFE0039DF6D /* Foundation.framework */; };
 		49B0EAFE18A94EFE0039DF6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B0EAFD18A94EFE0039DF6D /* CoreGraphics.framework */; };
 		49B0EB0018A94EFE0039DF6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B0EAFF18A94EFE0039DF6D /* UIKit.framework */; };
@@ -18,6 +26,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		491476B518AAA1E1004A6D80 /* TBBInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBBInfoViewController.h; sourceTree = "<group>"; };
+		491476B618AAA1E1004A6D80 /* TBBInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBBInfoViewController.m; sourceTree = "<group>"; };
+		4985B8BB18A983C000437D1A /* TBBModalStyleAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBBModalStyleAnimatedTransition.h; sourceTree = "<group>"; };
+		4985B8BC18A983C000437D1A /* TBBModalStyleAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBBModalStyleAnimatedTransition.m; sourceTree = "<group>"; };
+		4985B8BE18A983E300437D1A /* UIImage+TBBImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TBBImageEffects.h"; sourceTree = "<group>"; };
+		4985B8BF18A983E300437D1A /* UIImage+TBBImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TBBImageEffects.m"; sourceTree = "<group>"; };
+		4985B8C118A9884E00437D1A /* TBBModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBBModalViewController.h; sourceTree = "<group>"; };
+		4985B8C218A9884E00437D1A /* TBBModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBBModalViewController.m; sourceTree = "<group>"; };
+		4985B8C418A98ADA00437D1A /* UIViewController+TBBCustomTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TBBCustomTransition.h"; sourceTree = "<group>"; };
+		4985B8C518A98ADA00437D1A /* UIViewController+TBBCustomTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TBBCustomTransition.m"; sourceTree = "<group>"; };
+		4985B8C718A9909700437D1A /* BryceByRobLee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BryceByRobLee.jpg; sourceTree = "<group>"; };
+		4985B8C918A990CF00437D1A /* TBBGearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBBGearViewController.h; sourceTree = "<group>"; };
+		4985B8CA18A990CF00437D1A /* TBBGearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBBGearViewController.m; sourceTree = "<group>"; };
+		4985B8CC18A993A700437D1A /* TBBBryceCanyonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBBBryceCanyonViewController.h; sourceTree = "<group>"; };
+		4985B8CD18A993A700437D1A /* TBBBryceCanyonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBBBryceCanyonViewController.m; sourceTree = "<group>"; };
 		49B0EAF818A94EFE0039DF6D /* Modal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B0EAFB18A94EFE0039DF6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		49B0EAFD18A94EFE0039DF6D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -81,6 +104,13 @@
 				49B0EB3018A94F560039DF6D /* The Goods */,
 				49B0EB0A18A94EFE0039DF6D /* TBBAppDelegate.h */,
 				49B0EB0B18A94EFE0039DF6D /* TBBAppDelegate.m */,
+				4985B8CC18A993A700437D1A /* TBBBryceCanyonViewController.h */,
+				4985B8CD18A993A700437D1A /* TBBBryceCanyonViewController.m */,
+				4985B8C918A990CF00437D1A /* TBBGearViewController.h */,
+				4985B8CA18A990CF00437D1A /* TBBGearViewController.m */,
+				491476B518AAA1E1004A6D80 /* TBBInfoViewController.h */,
+				491476B618AAA1E1004A6D80 /* TBBInfoViewController.m */,
+				4985B8C718A9909700437D1A /* BryceByRobLee.jpg */,
 				49B0EB0D18A94EFE0039DF6D /* TBBModal.storyboard */,
 				49B0EB1318A94EFE0039DF6D /* Images.xcassets */,
 				49B0EB0218A94EFE0039DF6D /* Supporting Files */,
@@ -102,6 +132,14 @@
 		49B0EB3018A94F560039DF6D /* The Goods */ = {
 			isa = PBXGroup;
 			children = (
+				4985B8BE18A983E300437D1A /* UIImage+TBBImageEffects.h */,
+				4985B8BF18A983E300437D1A /* UIImage+TBBImageEffects.m */,
+				4985B8C418A98ADA00437D1A /* UIViewController+TBBCustomTransition.h */,
+				4985B8C518A98ADA00437D1A /* UIViewController+TBBCustomTransition.m */,
+				4985B8BB18A983C000437D1A /* TBBModalStyleAnimatedTransition.h */,
+				4985B8BC18A983C000437D1A /* TBBModalStyleAnimatedTransition.m */,
+				4985B8C118A9884E00437D1A /* TBBModalViewController.h */,
+				4985B8C218A9884E00437D1A /* TBBModalViewController.m */,
 			);
 			path = "The Goods";
 			sourceTree = "<group>";
@@ -159,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4985B8C818A9909700437D1A /* BryceByRobLee.jpg in Resources */,
 				49B0EB1418A94EFE0039DF6D /* Images.xcassets in Resources */,
 				49B0EB0618A94EFE0039DF6D /* InfoPlist.strings in Resources */,
 				49B0EB0F18A94EFE0039DF6D /* TBBModal.storyboard in Resources */,
@@ -173,7 +212,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				49B0EB0818A94EFE0039DF6D /* main.m in Sources */,
+				4985B8C018A983E300437D1A /* UIImage+TBBImageEffects.m in Sources */,
+				491476B718AAA1E1004A6D80 /* TBBInfoViewController.m in Sources */,
+				4985B8CE18A993A700437D1A /* TBBBryceCanyonViewController.m in Sources */,
+				4985B8CB18A990CF00437D1A /* TBBGearViewController.m in Sources */,
+				4985B8C618A98ADA00437D1A /* UIViewController+TBBCustomTransition.m in Sources */,
+				4985B8BD18A983C000437D1A /* TBBModalStyleAnimatedTransition.m in Sources */,
 				49B0EB0C18A94EFE0039DF6D /* TBBAppDelegate.m in Sources */,
+				4985B8C318A9884E00437D1A /* TBBModalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

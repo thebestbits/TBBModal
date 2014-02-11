@@ -20,14 +20,21 @@
 //    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //    THE SOFTWARE.
 
-#import "TBBAppDelegate.h"
+#import "TBBBryceCanyonViewController.h"
+#import "TBBGearViewController.h"
+#import "TBBInfoViewController.h"
 
-@implementation TBBAppDelegate
+@implementation TBBBryceCanyonViewController
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    self.window.tintColor = [UIColor colorWithHue:0.250 saturation:1.000 brightness:0.502 alpha:1.000];
-    return YES;
+- (IBAction)showGearVC:(id)sender {
+    TBBGearViewController *gear = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([TBBGearViewController class])];
+    
+    [self presentViewController:gear animated:YES completion:nil];
+}
+
+- (IBAction)showInfo:(id)sender {
+    TBBInfoViewController *info = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([TBBInfoViewController class])];
+    [self presentViewController:info animated:YES completion:nil];
 }
 
 @end
