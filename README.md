@@ -16,10 +16,7 @@ TBBModal
 
 Bryce Canyon image by [Rob Lee](http://www.flickr.com/photos/roblee/2355046252). UIImage+ImageEffects by [Apple](https://developer.apple.com/wwdc/videos/#226).
 
-    
-    
-    
-
+**License**
 
 Copyright (c) 2013 The Best Bits LLC
 
