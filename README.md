@@ -2,6 +2,8 @@ TBBModal
 ========
 *iOS 7-Like Modal Presentation*
 
+![Image](./BryceCanyonSample.png?raw=true)
+
 **Usage**
 
 1. Subclass TBBModalViewController
