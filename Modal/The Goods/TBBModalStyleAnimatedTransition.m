@@ -10,6 +10,8 @@
 #import "UIImage+TBBImageEffects.h"
 #import "TBBModalViewController.h"
 
+static const NSTimeInterval kTransitionDuration = 0.3f;
+
 @interface TBBModalStyleAnimatedTransition ()
 @property (nonatomic) UIView *shadow;
 @property (nonatomic, getter = isPresenting) BOOL presenting;
@@ -28,7 +30,7 @@
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {
-    return 0.3f;
+    return kTransitionDuration;
 }
 
 - (void)presentInContext:(id<UIViewControllerContextTransitioning>)transitionContext {
@@ -66,7 +68,7 @@
     CGPoint center = containerView.center;
     settings.bounds = CGRectMake(0, 0, 280, containerView.bounds.size.height);
     settings.center = center;
-    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+    [UIView animateWithDuration:kTransitionDuration delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         self.shadow.backgroundColor = [UIColor colorWithWhite:0. alpha:0.3];
         settings.alpha = 1;
         settings.transform = transformForCurrentOrientation;
@@ -81,7 +83,7 @@
     
     UIView *dismissedView = dismissed.view;
     
-    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:kTransitionDuration delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         dismissedView.transform = CGAffineTransformScale(dismissedView.transform,  0.75, 0.75);
         dismissedView.alpha = 0.0;
         self.shadow.alpha = 0.0;
