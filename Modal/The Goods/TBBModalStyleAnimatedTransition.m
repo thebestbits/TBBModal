@@ -61,14 +61,15 @@
     
     settings.alpha = 0;
     settings.backgroundColor = [UIColor clearColor];
-    settings.transform = CGAffineTransformMakeScale(1.2, 1.2);
+    CGAffineTransform transformForCurrentOrientation = settings.transform;
+    settings.transform = CGAffineTransformScale(transformForCurrentOrientation, 1.2, 1.2);
     CGPoint center = containerView.center;
     settings.bounds = CGRectMake(0, 0, 280, containerView.bounds.size.height);
     settings.center = center;
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         self.shadow.backgroundColor = [UIColor colorWithWhite:0. alpha:0.3];
         settings.alpha = 1;
-        settings.transform = CGAffineTransformMakeScale(1, 1);
+        settings.transform = transformForCurrentOrientation;
     } completion:^(BOOL finished) {
         self.presenting = NO;
         [transitionContext completeTransition:YES];
@@ -81,7 +82,7 @@
     UIView *dismissedView = dismissed.view;
     
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        dismissedView.transform = CGAffineTransformMakeScale(0.75, 0.75);
+        dismissedView.transform = CGAffineTransformScale(dismissedView.transform,  0.75, 0.75);
         dismissedView.alpha = 0.0;
         self.shadow.alpha = 0.0;
     } completion:^(BOOL finished) {
