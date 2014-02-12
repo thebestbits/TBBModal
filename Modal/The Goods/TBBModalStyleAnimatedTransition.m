@@ -52,8 +52,10 @@
     controller.selectedSnapshot = lightImage;
     
     UITableView *settings = (UITableView *)controller.view;
+    settings.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleHeight;
     self.shadow = [[UIView alloc] initWithFrame:containerView.bounds];
     self.shadow.backgroundColor = [UIColor colorWithWhite:0 alpha:0];
+    self.shadow.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [containerView addSubview:self.shadow];
     [containerView addSubview:settings];
     
