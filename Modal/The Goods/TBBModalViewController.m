@@ -30,6 +30,7 @@
     if (self) {
         self.modalPresentationStyle = UIModalPresentationCustom;
         self.transitioningDelegate = self;
+        self.preferredContentSize = CGSizeMake(300, 220);
         self.tbb_customTransitioning = [TBBModalStyleAnimatedTransition new];
     }
     return self;
@@ -44,6 +45,7 @@
 {
     self.modalPresentationStyle = UIModalPresentationCustom;
     self.transitioningDelegate = self;
+    self.preferredContentSize = CGSizeMake(300, 220);
     self.tbb_customTransitioning = [TBBModalStyleAnimatedTransition new];
 }
 
@@ -95,11 +97,10 @@
 - (void)padTableView {
     UITableView *tableView = self.tableView;
     UIView *header = tableView.tableHeaderView;
-    UIView *footer = tableView.tableFooterView;
     
     CGRect tableBounds = tableView.bounds;
     UIEdgeInsets insets = tableView.contentInset;
-    CGFloat height = tableBounds.size.height - insets.top - insets.bottom;
+    CGFloat height = tableBounds.size.height;
     for (NSInteger section = 0; section < tableView.numberOfSections; ++section) {
         for (NSInteger row = 0; row < [tableView numberOfRowsInSection:section]; ++row) {
             height -= [tableView.delegate tableView:tableView heightForRowAtIndexPath:[NSIndexPath indexPathForRow:row inSection:section]];
@@ -112,7 +113,6 @@
     
     if (header.frame.size.height != height) {
         tableView.tableHeaderView = header = [[UIView alloc] initWithFrame:headerFooterFrame];
-        tableView.tableFooterView = footer = [[UIView alloc] initWithFrame:headerFooterFrame];
     }
 }
 

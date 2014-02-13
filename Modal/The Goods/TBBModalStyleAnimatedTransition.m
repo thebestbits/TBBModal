@@ -66,7 +66,7 @@ static const NSTimeInterval kTransitionDuration = 0.3f;
     CGAffineTransform transformForCurrentOrientation = settings.transform;
     settings.transform = CGAffineTransformScale(transformForCurrentOrientation, 1.2, 1.2);
     CGPoint center = containerView.center;
-    settings.bounds = CGRectMake(0, 0, 280, containerView.bounds.size.height);
+    settings.bounds = CGRectMake(0, 0, MAX(100, controller.preferredContentSize.width), containerView.bounds.size.height);
     settings.center = center;
     [UIView animateWithDuration:kTransitionDuration delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         self.shadow.backgroundColor = [UIColor colorWithWhite:0. alpha:0.3];
