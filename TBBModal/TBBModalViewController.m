@@ -36,7 +36,7 @@
     return self;
 }
 
-- (NSUInteger)supportedInterfaceOrientations
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskAll;
 }
@@ -99,7 +99,6 @@
     UIView *header = tableView.tableHeaderView;
     
     CGRect tableBounds = tableView.bounds;
-    UIEdgeInsets insets = tableView.contentInset;
     CGFloat height = tableBounds.size.height;
     for (NSInteger section = 0; section < tableView.numberOfSections; ++section) {
         for (NSInteger row = 0; row < [tableView numberOfRowsInSection:section]; ++row) {

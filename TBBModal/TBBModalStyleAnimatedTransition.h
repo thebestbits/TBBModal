@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 The Best Bits LLC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface TBBModalStyleAnimatedTransition : NSObject <UIViewControllerAnimatedTransitioning>
 @end
