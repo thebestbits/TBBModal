@@ -47,6 +47,7 @@
     self.transitioningDelegate = self;
     self.preferredContentSize = CGSizeMake(300, 220);
     self.tbb_customTransitioning = [TBBModalStyleAnimatedTransition new];
+    [super awakeFromNib];
 }
 
 - (void)viewDidLoad
